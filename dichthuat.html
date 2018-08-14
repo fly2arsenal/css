@@ -11,6 +11,7 @@
         <noscript>
             <style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style>
         </noscript>
+        
     </head>
     <body>
         <header class="back_header">
@@ -163,11 +164,41 @@
             </div>
             <div id="sticky_ads"></div>
         </div>
-        <style type="text/css">
-        #root_domain{
-            border-radius: 50%;
-            
-        }
+        <style>
+            @media only screen and (max-width: 474px) {
+                body{
+                    font-family: Arial,Helvetica,sans-serif;
+                    font-size: 14px;
+                    line-height: 1.48;
+                    color: #646464;
+                    background-color: #fff;
+                }
+                header #box_logo {
+                    margin: auto;
+                }
+                header #box_logo amp-img {
+                    width: 50%;
+                    height: 50px;
+                    margin-top: -10px;
+                }
+                #breadcrumb .insider {
+                    text-align: center;
+                }
+                #breadcrumb .insider a {
+                    padding: 10px 0;
+                    color:#ff4064;
+                    background-color: transparent;
+                }
+                #title_page h1 {
+                    border-bottom: 2px solid #ed1c24;
+                    font-size: 18px;
+                    padding-top: 20px;
+                    text-align: left;
+                    color: #323232;
+                    font-weight: 400;
+                }
+            }           
         </style>
+        
     </body>
 </html>
