@@ -101,7 +101,7 @@
                 <div id="incontent_ads"></div>
                 <div id="lcontent">
                     <p>Để thuận tiện trong việc giao chuyển, nhận biên dịch tài liệu cơ khí đa ngôn ngữ ở nhiều định đạng file khác nhau là một yếu tố vô cùng cần thiết. Bao gồm:</p>
-                    <ul>
+                    <ul id="contenti">
                         <li>Các file tài liệu dạng Word, Powerpoint (.doc, docx, slx, .slxs…)</li>
                         <li>Tài liệu giấy in, hình ảnh</li>
                         <li>Tài liệu sử dụng phần mềm dàn trang như QuarkXpress</li>
@@ -113,15 +113,15 @@
                     <p>Đội ngũ biên dịch viên đông đảo, dày dạn kinh nghiệm trong lĩnh vực biên dịch tài liệu cơ khí đa ngữ. Không chỉ quy tụ các chuyên gia ngôn ngữ hàng đầu ( tiếng Anh, Hàn, Đức, Nhật, Trung…), các nhân viên tại Tomato Media còn được đào tạo chuyên sâu về khoa học kỹ thuật cơ khí. Chúng tôi đảm bảo biên dịch chuẩn xác các thuật ngữ chuyên ngành, các từ thuộc khoa học chuyên môn, văn phong chuẩn nghiên cứu khoa học.</p>
                     <p>Tomato Media đảm bảo báo giá chính xác, nhanh chóng các dịch vụ biên dịch tài liệu chuyên ngành cơ khí đa ngữ cho khách hàng mỗi khi có nhu cầu hợp tác. Đảm bảo mức phí phù hợp, chất lượng tuyệt vời.</p>
                     <p>Tin chọn Tomato sẽ không làm bạn thất vọng, liên hệ với chúng tôi để được chăm sóc 24/7:</p>
-                    <h2><a href="https://dichthuattomato.com/dich-vu/bien-dich/">Tomato Media</a></h2>
+                    <h2 id="tomato_link"><a href="https://dichthuattomato.com/dich-vu/bien-dich/">Tomato Media</a></h2>
                     <p>Hotline: 093 8596 333</p>
                     <p>Email: info@tomatomediavn.com</p>
                     <p>Địa chỉ: Tầng 5 tòa nhà Kinh Đô, 292 Tây Sơn, Đống Đa, Hà Nội</p>
                     <p> </p>
                 </div>
             </div>
-            <div id="endcontent_ads">              </div>
-            <div class="title_box">Tin liên quan</div>
+            <div id="endcontent_ads"></div>
+            <div class="title_box" id="related_news">Tin liên quan</div>
             <div id="related">
                 <li class="related-item post-2388 post type-post status-publish format-standard has-post-thumbnail hentry category-bien-dich category-dich-thuat-tieng-nhat tag-bien-dich-tieng-nhat" id="post-2388"> <a class="post-title" href="https://dichthuattomato.com/nhung-luu-y-de-co-ban-dich-tieng-nhat-hoan-hao/">NHỮNG LƯU Ý “VÀNG” ĐỂ CÓ BẢN DỊCH TIẾNG NHẬT HOÀN HẢO</a></li>
                 <li class="related-item post-2300 post type-post status-publish format-standard has-post-thumbnail hentry category-bien-dich" id="post-2300"> <a class="post-title" href="https://dichthuattomato.com/vi-sao-bien-dich-vien-tai-tomato-luon-duoc-danh-gia-cao/">VÌ SAO BIÊN DỊCH VIÊN TẠI TOMATO LUÔN ĐƯỢC ĐÁNH GIÁ CAO?</a></li>
@@ -172,17 +172,26 @@
                     line-height: 1.48;
                     color: #646464;
                     background-color: #fff;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+                header .fixed_head{
+                    height: 0px;
+                    position: relative;
                 }
                 header #box_logo {
                     margin: auto;
                 }
                 header #box_logo amp-img {
-                    width: 50%;
-                    height: 50px;
+                    width: 60%;
+                    height: 60px;
                     margin-top: -10px;
                 }
                 #breadcrumb .insider {
                     text-align: center;
+                    margin-left: -40px;
+                    margin-right:-40px;
+                    margin-top: 20px;
                 }
                 #breadcrumb .insider a {
                     padding: 10px 0;
@@ -193,9 +202,51 @@
                     border-bottom: 2px solid #ed1c24;
                     font-size: 18px;
                     padding-top: 20px;
+                    padding-bottom: 5px;
                     text-align: left;
                     color: #323232;
                     font-weight: 400;
+                }
+                #time_create{
+                    font-size: 13px;
+                    color: #ababab;
+                }
+                #time_create time{
+                    font-size: 13px;
+                    color: #ababab;
+                }
+                #fcontent h2 strong {
+                    color: #323232;
+                }
+                
+                #fcontent ul li{
+                    margin-left: -20px;
+                }
+                #lcontent h2 strong {
+                    color: #323232;
+                }
+                #lcontent ul li{
+                    margin-left: -20px;
+                }
+                #tomato_link{
+                    font-weight: 500;
+                }
+                #related_news{
+                    font-size: 17.22px;
+                    text-transform: uppercase;
+                    color: #323232;
+                    font-weight: 400;
+                    border-bottom: 1px solid #ebebeb;
+                    line-height: 20px;
+                    margin-bottom: 13px;
+                }
+                #related .related-item{
+                    border-bottom:0;
+                    line-height: 1.8;
+                }
+                #related .related-item a {
+                    color: #323232;
+                    font-weight: 700;
                 }
             }           
         </style>
