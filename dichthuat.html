@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,minimum-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="canonical" href="http://dichthuattomato.com/bien-dich-tai-lieu-co-khi-da-ngon-ngu-chuan-xac-toc-do-tai-tomato/">
         <script async src="https://cdn.ampproject.org/v0.js"></script> <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script> <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>          <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js"></script><script async custom-element="amp-sticky-ad" src="https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js"></script>          <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script><script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>                         
         <title>BIÊN DỊCH TÀI LIỆU CƠ KHÍ ĐA NGÔN NGỮ CHUẨN XÁC TẠI TOMATO</title>
@@ -14,7 +15,7 @@
         
     </head>
     <body>
-        <header class="back_header">
+        <header class="back_header" id="header_back">
             <div class="fixed_head">
                 <div class="clearfix">
                     <div id="box_logo">
@@ -23,7 +24,7 @@
                         </a>
                     </div>
                     <div class="left_nav clearfix">
-                        <button class="container show_menu" on="tap:sidebar.toggle">
+                        <button class="container show_menu" id="menu_show" on="tap:sidebar.toggle">
                             <div class="bar1"></div>
                             <div class="bar2"></div>
                             <div class="bar3"></div>
@@ -123,9 +124,9 @@
             <div id="endcontent_ads"></div>
             <div class="title_box" id="related_news">Tin liên quan</div>
             <div id="related">
-                <li class="related-item post-2388 post type-post status-publish format-standard has-post-thumbnail hentry category-bien-dich category-dich-thuat-tieng-nhat tag-bien-dich-tieng-nhat" id="post-2388"> <a class="post-title" href="https://dichthuattomato.com/nhung-luu-y-de-co-ban-dich-tieng-nhat-hoan-hao/">NHỮNG LƯU Ý “VÀNG” ĐỂ CÓ BẢN DỊCH TIẾNG NHẬT HOÀN HẢO</a></li>
-                <li class="related-item post-2300 post type-post status-publish format-standard has-post-thumbnail hentry category-bien-dich" id="post-2300"> <a class="post-title" href="https://dichthuattomato.com/vi-sao-bien-dich-vien-tai-tomato-luon-duoc-danh-gia-cao/">VÌ SAO BIÊN DỊCH VIÊN TẠI TOMATO LUÔN ĐƯỢC ĐÁNH GIÁ CAO?</a></li>
-                <li class="related-item post-2296 post type-post status-publish format-standard has-post-thumbnail hentry category-bien-dich tag-bien-dich-truyen" id="post-2296"> <a class="post-title" href="https://dichthuattomato.com/bien-dich-truyen-sach-da-ngon-ngu-tai-tomato-media/">BIÊN DỊCH TRUYỆN, SÁCH ĐA NGÔN NGỮ TẠI TOMATO MEDIA</a></li>
+                <li class="related-item post-2388 post type-post status-publish format-standard has-post-thumbnail hentry category-bien-dich category-dich-thuat-tieng-nhat tag-bien-dich-tieng-nhat" id="post-2388"> <a class="post-title" href="https://dichthuattomato.com/nhung-luu-y-de-co-ban-dich-tieng-nhat-hoan-hao/"><span><i class="fas fa-angle-right"></i></span> NHỮNG LƯU Ý “VÀNG” ĐỂ CÓ BẢN DỊCH TIẾNG NHẬT HOÀN HẢO</a></li>
+                <li class="related-item post-2300 post type-post status-publish format-standard has-post-thumbnail hentry category-bien-dich" id="post-2300"> <a class="post-title" href="https://dichthuattomato.com/vi-sao-bien-dich-vien-tai-tomato-luon-duoc-danh-gia-cao/"><span><i class="fas fa-angle-right"></i></span> VÌ SAO BIÊN DỊCH VIÊN TẠI TOMATO LUÔN ĐƯỢC ĐÁNH GIÁ CAO?</a></li>
+                <li class="related-item post-2296 post type-post status-publish format-standard has-post-thumbnail hentry category-bien-dich tag-bien-dich-truyen" id="post-2296"> <a class="post-title" href="https://dichthuattomato.com/bien-dich-truyen-sach-da-ngon-ngu-tai-tomato-media/"><span><i class="fas fa-angle-right"></i></span> BIÊN DỊCH TRUYỆN, SÁCH ĐA NGÔN NGỮ TẠI TOMATO MEDIA</a></li>
             </div>
             <div id="footer_ads"></div>
             <div class="clearfix footer_bottom">
@@ -136,17 +137,17 @@
                                 <div class="container">
                                     <h3 class="tmt-title-thank-you">Trân trọng cảm ơn và ước mong sẽ có cơ hội phục vụ!</h3>
                                     <div class="row">
-                                        <div class="col-sm-6">
-                                            <h3 class="tmt-adress-hn">Trụ Sở Chính Hà Nội</h3>
-                                            <p class="tmt-icon-address"><span>Phòng 504, Tòa nhà Kinh Đô, 292 Tây Sơn, Phường Trung Liệt, Quận Đống Đa, Hà Nội, Việt Nam</span></p>
-                                            <p class="tmt-icon-phone">Hotline: 093 859 6333</p>
-                                            <p class="tmt-icon-phone">Tel: 0243 851 6333</p>
+                                        <div class="col-sm-6 info_company">
+                                            <h3 class="tmt-adress-hn"><span><i class="fas fa-home"></i></span> Trụ Sở Chính Hà Nội</h3>
+                                            <p class="tmt-icon-address"><span> <i class="fas fa-map-marker-alt"></i></span> Phòng 504, Tòa nhà Kinh Đô, 292 Tây Sơn, Phường Trung Liệt, Quận Đống Đa, Hà Nội, Việt Nam</p>
+                                            <p class="tmt-icon-phone"><span><i class="fas fa-phone"></i></span> Hotline: 093 859 6333</p>
+                                            <p class="tmt-icon-phone"><span><i class="fas fa-phone"></i></span> Tel: 0243 851 6333</p>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <h3 class="tmt-adress-hcm">Chi nhánh TP.Hồ Chí Minh</h3>
-                                            <p class="tmt-icon-address">Tầng 6, số 166 Nguyễn Công Trứ, P. Nguyễn Thái Bình, Quận 1, Hồ Chí Minh</p>
-                                            <p class="tmt-icon-mail">info@tomatomediavn.com</p>
-                                            <p class="tmt-icon-address">Thời gian làm việc: 9h00-18h00 thứ 2 - thứ 6</p>
+                                        <div class="col-sm-6 info_company">
+                                            <h3 class="tmt-adress-hcm"><span><i class="fab fa-telegram-plane"></i></span> Chi nhánh TP.Hồ Chí Minh</h3>
+                                            <p class="tmt-icon-address"><span> <i class="fas fa-map-marker-alt"></i></span> Tầng 6, số 166 Nguyễn Công Trứ, P. Nguyễn Thái Bình, Quận 1, Hồ Chí Minh</p>
+                                            <p class="tmt-icon-mail"><span><i class="far fa-envelope"></i></span> @tomatomediavn.com</p>
+                                            <p class="tmt-icon-address"><span><i class="far fa-clock"></i></span> Thời gian làm việc: 9h00-18h00 thứ 2 - thứ 6</p>
                                         </div>
                                     </div>
                                     <div class="row tmt-button-thank">
@@ -172,20 +173,27 @@
                     line-height: 1.48;
                     color: #646464;
                     background-color: #fff;
-                    padding-left: 50px;
-                    padding-right: 50px;
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
+                #header_back{
+                    position: unset;
                 }
                 header .fixed_head{
                     height: 0px;
                     position: relative;
                 }
                 header #box_logo {
+                    width: 70px;
                     margin: auto;
                 }
                 header #box_logo amp-img {
-                    width: 60%;
-                    height: 60px;
+                    height: 62px;
                     margin-top: -10px;
+                }
+                #menu_show {
+                    padding-top: 20px;
+                    margin-right: -40px;
                 }
                 #breadcrumb .insider {
                     text-align: center;
@@ -231,6 +239,9 @@
                 #tomato_link{
                     font-weight: 500;
                 }
+                #related {
+                    padding-left: 20px;
+                }
                 #related_news{
                     font-size: 17.22px;
                     text-transform: uppercase;
@@ -247,6 +258,75 @@
                 #related .related-item a {
                     color: #323232;
                     font-weight: 700;
+                    position: relative;
+                }
+                #related .related-item i {
+                    color: #ed1c24;
+                    padding-right: 5px;
+                }
+                #footer_content{
+                    background: url("https://dichthuattomato.com/wp-content/themes/vietmoz/assets/images/background-thank-you.jpg") no-repeat center center;
+                    margin-left: -50px;
+                    margin-right: -50px;
+                }
+                #footer_content .tmt-title-thank-you{
+                    font-family: Montserrat;
+                    text-align: center;
+                    color: #ed1c24;
+                    font-size: 24px;
+                    padding: 15px;
+                    line-height: 1.2;
+                    margin-bottom: 0.75em;
+                    margin-top: -24px;  
+                }
+                .info_company {
+                    color: #fff;
+                    text-align: left;
+                    padding-left: 20px;
+                }
+                .info_company h3{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                .info_company p{
+                    font-size: 14px;
+                }
+                .info_company i{
+                    padding-right: 5px;
+                }
+                .tmt-item-button-thank{
+                    text-align: left;
+                    margin: 45px 15px;
+                }
+                .tmt-item-button-thank .tmt-view-map{
+                    color: #fff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    border-radius: 10px;
+                    text-decoration: none ;
+                    background-color: #ed1c24;
+                    padding: 15px 25px;
+                }
+                .tmt-item-button-thank .tmt-call-now{
+                    color: #fff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    border-radius: 10px;
+                    text-decoration: none ;
+                    background-color: #5b5b5b;
+                    padding: 15px 25px;
+                }
+                .tmt-item-button-thank .tmt-trans-online{
+                    color: #fff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    border-radius: 10px;
+                    text-decoration: none ;
+                    background-color: #1aafc5;
+                    padding: 15px 25px;
+                }
+                #sidebar{
+                    display: none;
                 }
             }           
         </style>
